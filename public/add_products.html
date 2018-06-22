@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="shop.js"></script>
+    <script src="add_products.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <div style="padding: 5px; background-color: #253141; border-radius:5px;">
+    <a style="float:left; padding-left: 5px;font-size: 23px; margin-top: 5px;color: white; text-decoration:none;" href = "/">Express Shopping</a>
+
+    <div style="padding: 7px;">
+      <div class="container"style="width: 80%; margin-left:17%;">
+        <div class="row">
+          <div class="col-sm-8">
+
+          </div>
+          <div class="col-sm-4">
+              <div class="row">
+                <div class="col" align = "right">
+                  <i class="fas fa-shopping-cart fa-lg" style="color: white;margin-top: 7px;" id = "cartbtn" onclick="changepageToCart()"></i><span style="color:white; padding: 10px;">&nbspCart<span>
+                </div>
+                <div class="col" align = "right" >
+                  <i class="fas fa-unlock-alt fa-lg" style="color: white; margin-top: 7px;" id = "cartbtn" onclick="changepageToaddProd()"></i><span style="color:white; padding:10px;">&nbspAdmin Portal<span>
+                </div>
+
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="p-4">
+        <h3 class="text-center">Add Product</h3>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-6">
+                <form>
+                    <div class="form-group">
+                        <label for="productName">Product Name</label>
+                        <input type="text" id="productName">
+                    </div>
+                    <div class="form-group">
+                        <label for="productManufacturer">Manufacturer&nbsp&nbsp</label>
+                        <input type="text" id="productManufacturer">
+                    </div>
+                    <div class="form-group">
+                        <label for="productPrice">Price</label>
+                        <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><input type="number" id="productPrice">
+                    </div>
+                </form>
+                <button id="btnProductAdd" class="btn btn-primary">Add</button>
+            </div>
+            <div class="col"></div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>

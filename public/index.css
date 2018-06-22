@@ -1,0 +1,46 @@
+#carder{
+
+  border-radius: 5px;
+  border-width: 7px 1px 7px 1px;
+  border-color: #253141;
+  background-color: white ;
+}
+
+ #buybtn{
+  height: 37px;
+  margin-top: 85px;
+  border: 1px solid #253141;
+
+  color: #253141;
+
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 13px rgba(37,49,65,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 13px rgba(37,49,65,0.8);
+}
+
+#cartbtn {
+    transition: transform .2s;
+
+}
+
+#cartbtn:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
+#product-list{
+  height: 550px;
+  overflow-y: scroll;
+}
